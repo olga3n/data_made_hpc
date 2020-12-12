@@ -1,0 +1,96 @@
+--------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca opal_warn_on_missing_libcuda 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+Process node1, rank: 0
+
+Round: 1
+Process node3, rank: 4
+Message from rank 0. Contacts: 1
+  [Contact 0] Process node1, rank: 0
+
+Round: 3
+Process node4, rank: 6
+Message from rank 7. Contacts: 3
+  [Contact 0] Process node1, rank: 0
+  [Contact 1] Process node3, rank: 4
+  [Contact 2] Process node4, rank: 7
+
+Round: 2
+Process node4, rank: 7
+Message from rank 4. Contacts: 2
+  [Contact 0] Process node1, rank: 0
+  [Contact 1] Process node3, rank: 4
+
+Round: 4
+Process node3, rank: 5
+Message from rank 6. Contacts: 4
+  [Contact 0] Process node1, rank: 0
+  [Contact 1] Process node3, rank: 4
+  [Contact 2] Process node4, rank: 7
+  [Contact 3] Process node4, rank: 6
+
+Round: 5
+Process node4, rank: 8
+Message from rank 5. Contacts: 5
+  [Contact 0] Process node1, rank: 0
+  [Contact 1] Process node3, rank: 4
+  [Contact 2] Process node4, rank: 7
+  [Contact 3] Process node4, rank: 6
+  [Contact 4] Process node3, rank: 5
+
+Round: 6
+Process node3, rank: 2
+Message from rank 8. Contacts: 6
+  [Contact 0] Process node1, rank: 0
+  [Contact 1] Process node3, rank: 4
+  [Contact 2] Process node4, rank: 7
+  [Contact 3] Process node4, rank: 6
+  [Contact 4] Process node3, rank: 5
+  [Contact 5] Process node4, rank: 8
+
+Round: 7
+Process node2, rank: 1
+Message from rank 2. Contacts: 7
+  [Contact 0] Process node1, rank: 0
+  [Contact 1] Process node3, rank: 4
+  [Contact 2] Process node4, rank: 7
+  [Contact 3] Process node4, rank: 6
+  [Contact 4] Process node3, rank: 5
+  [Contact 5] Process node4, rank: 8
+  [Contact 6] Process node3, rank: 2
+
+Round: 8
+Process node4, rank: 9
+Message from rank 1. Contacts: 8
+  [Contact 0] Process node1, rank: 0
+  [Contact 1] Process node3, rank: 4
+  [Contact 2] Process node4, rank: 7
+  [Contact 3] Process node4, rank: 6
+  [Contact 4] Process node3, rank: 5
+  [Contact 5] Process node4, rank: 8
+  [Contact 6] Process node3, rank: 2
+  [Contact 7] Process node2, rank: 1
+
+Round: 9
+Process node3, rank: 3
+Message from rank 9. Contacts: 9
+  [Contact 0] Process node1, rank: 0
+  [Contact 1] Process node3, rank: 4
+  [Contact 2] Process node4, rank: 7
+  [Contact 3] Process node4, rank: 6
+  [Contact 4] Process node3, rank: 5
+  [Contact 5] Process node4, rank: 8
+  [Contact 6] Process node3, rank: 2
+  [Contact 7] Process node2, rank: 1
+  [Contact 8] Process node4, rank: 9
+[node1:17023] 9 more processes have sent help message help-mpi-common-cuda.txt / dlopen failed
+[node1:17023] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
