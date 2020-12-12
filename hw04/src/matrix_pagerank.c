@@ -88,6 +88,7 @@ void matrix_pagerank(
     }
 
     free(fixed_matrix);
+    free(curr_vector);
 }
 
 void calc_freq(double *matrix, double *freq, int N)

@@ -7,7 +7,7 @@ BIN=bin
 HEADERS=${SRC}/generator.h ${SRC}/utils.h
 SOURCES=${SRC}/benchmark.cpp ${SRC}/generator.cpp ${SRC}/utils.cpp
 
-TARGET=${BIN}/benchmark.o
+TARGET=${BIN}/benchmark
 
 all: bindir build_benchmark
 

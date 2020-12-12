@@ -3,7 +3,7 @@
 set -e
 
 SCRIPT_PATH=$(pwd)/$(dirname $0)
-BENCHMARK_BIN=${SCRIPT_PATH}/bin/benchmark.o
+BENCHMARK_BIN=${SCRIPT_PATH}/bin/benchmark
 
 TYPES=(
     "matrix_matrix"

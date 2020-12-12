@@ -5,14 +5,14 @@ SRC=src
 BIN=bin
 
 SRC_FILES=$(wildcard $(SRC)/*.c)
-TARGETS=$(patsubst $(SRC)/%.c,$(BIN)/%.o,$(SRC_FILES))
+TARGETS=$(patsubst $(SRC)/%.c,$(BIN)/%,$(SRC_FILES))
 
 all: bindir $(TARGETS)
 
 bindir:
 	mkdir -p $(BIN)
 
-$(BIN)/%.o: $(SRC)/%.c
+$(BIN)/%: $(SRC)/%.c
 	$(CXX) -o $@ $< $(CXXFLAGS)
 
 clean:
